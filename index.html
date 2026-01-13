@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trelio | Student Mental Health Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container" style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+            <div class="logo">💠 TRELIO</div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#pillars">Four Pillars</a></li>
+                <li><button id="theme-switch" class="theme-toggle">🌙 Dark Mode</button></li>
+                <li><button class="btn-blue open-modal">Get Started</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">TRELIO MENTAL HEALTH APP</div>
+            <h1>Your Mind's <span class="text-blue">Safe Harbor.</span></h1>
+            <p>An AI-powered sanctuary where everyone finds accessible, anonymous, and professional mental health support.</p>
+            <div class="hero-btns">
+                <button class="btn-blue open-modal">Launch App</button>
+                <a href="#how-it-works" class="btn-outline" style="margin-left: 15px; text-decoration: none; border: 2px solid var(--primary-blue); padding: 10px 25px; border-radius: 8px; color: var(--primary-blue); font-weight: 700;">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="mood-showcase section" id="mood-section">
+    <div class="container mood-flex">
+        <div class="mood-text">
+            <h2>Start from scratch or explore our gallery.</h2>
+            <p>Find instant inspiration based on how you feel right now.</p>
+            <button class="btn-blue open-modal">Explore Gallery</button>
+        </div>
+        
+    <div class="mood-center">
+        <img src="images/trelio logo.jpeg" alt="Trelio">
+    </div>
+    <div class="mood-orbit-container">
+    
+    <div class="orbiting-mood" style="--i:1;" data-color="#e0f2fe" data-mood="Happy">
+        <div class="mood-float-layer">
+            <img src="images/happy.jpeg" alt="Happy">
+            <p>HAPPY</p>
+        </div>
+    </div>
+    <div class="orbiting-mood" style="--i:2;" data-color="#fef9c3" data-mood="Angry">
+        <div class="mood-float-layer">
+            <img src="images/angry.jpeg" alt="Angry">
+            <p>ANGRY</p>
+        </div>
+    </div>
+    <div class="orbiting-mood" style="--i:3;" data-color="#f3f4f6" data-mood="Anxious">
+        <div class="mood-float-layer">
+            <img src="images/anxious.jpeg" alt="Anxious">
+            <p>ANXIOUS</p>
+        </div>
+    </div>
+    <div class="orbiting-mood" style="--i:4;" data-color="#f5f3ff" data-mood="Tired">
+        <div class="mood-float-layer">
+            <img src="images/tired.jpeg" alt="Tired">
+            <p>TIRED</p>
+        </div>
+    </div>
+    <div class="orbiting-mood" style="--i:5;" data-color="#ecfdf5" data-mood="Peaceful">
+        <div class="mood-float-layer">
+            <img src="images/peaceful.jpeg" alt="Peaceful">
+            <p>PEACEFUL</p>
+        </div>
+    </div>
+    <div class="orbiting-mood" style="--i:6;" data-color="#e2e8f0" data-mood="Sad">
+        <div class="mood-float-layer">
+            <img src="images/sad.jpeg" alt="Sad">
+            <p>SAD</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div id="mood-gallery" class="modal-overlay">
+    <div class="modal-card gallery-card" style="max-width: 900px; width: 95%;">
+        <button class="close-gallery" style="position: absolute; top: 20px; right: 20px; font-size: 2rem; border: none; background: none; cursor: pointer;">&times;</button>
+        
+        <div class="gallery-header">
+            <h2 id="gallery-title">Inspiration for your Mood</h2>
+            <p id="gallery-subtitle">Hand-picked resources to support your journey.</p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+            </div>
+    </div>
+</div>
+</section>
+    <section id="mission" class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="text-block">
+                    <span class="badge" style="background: var(--bg-alt); color: var(--primary-blue);">THE GENESIS</span>
+                    <h2>Built by Students, for Students</h2>
+                    <p>Trelio was created to bridge the gap between academic pressure and emotional well-being. It is a judgment-free space designed for the unique challenges of university life.</p>
+                    <div class="privacy-box" style="margin-top: 20px; padding: 20px; background: var(--bg-alt); border-left: 5px solid var(--primary-blue); border-radius: 8px;">
+                        <strong style="display: block; margin-bottom: 5px;">Privacy is Non-Negotiable</strong>
+                        <p>Full encryption and anonymous access ensure your identity remains protected at all times.</p>
+                    </div>
+                </div>
+                <div class="image-block">
+                    <img src="images/mission.jpeg" alt="Mission Illustration" style="width: 100%; border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="how-it-works" class="section" style="background-color: var(--bg-alt);">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 50px;">How Trelio Works</h2>
+            
+            <div class="steps-wrapper">
+                <div class="step-item grid-2" style="margin-bottom: 100px;">
+                    <div class="image-block">
+                        <img src="images/step1.jpeg" alt="Registration Screen" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="text-block">
+                        <span class="badge">STEP 01</span>
+                        <h3>Secure Onboarding</h3>
+                        <p>Begin your journey by creating an anonymous profile. Trelio uses end-to-end encryption to ensure that your data and conversations stay yours alone.</p>
+                    </div>
+                </div>
+
+                <div class="step-item grid-2">
+                    <div class="text-block">
+                        <span class="badge">STEP 02</span>
+                        <h3>Choose Your Support Path</h3>
+                        <p>Whether you need an immediate chat with our AI, a connection with a fellow student, or a formal session with a licensed therapist, the choice is in your hands.</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/step2.jpeg" alt="App Dashboard" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pillars" class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">The Four Pillars</h2>
+            <div class="pillars-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                <div class="card">
+                    <div class="icon" style="font-size: 3rem; margin-bottom: 15px;">🤖</div>
+                    <h3>Talk to Trelio AI</h3>
+                    <p>A 24/7 intelligent companion that listens with genuine compassion.</p>
+                </div>
+                <div class="card">
+                    <div class="icon" style="font-size: 3rem; margin-bottom: 15px;">🤝</div>
+                    <h3>Meet New Friends</h3>
+                    <p>Peer matching to reduce isolation and connect with students sharing similar journeys.</p>
+                </div>
+                <div class="card">
+                    <div class="icon" style="font-size: 3rem; margin-bottom: 15px;">🩺</div>
+                    <h3>Professional Support</h3>
+                    <p>Access licensed therapists specialized in student-specific mental health needs.</p>
+                </div>
+                <div class="card">
+                    <div class="icon" style="font-size: 3rem; margin-bottom: 15px;">🏰</div>
+                    <h3>Peer Communities</h3>
+                    <p>Join supportive networks for real-time conversations and shared community healing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 style="margin-bottom: 20px;">See Trelio in Action</h2>
+            <p style="margin-bottom: 40px; color: var(--text-muted);">Watch this brief walkthrough to see how Trelio provides a seamless support experience.</p>
+            <div class="video-container" style="max-width: 900px; margin: 0 auto; border-radius: 25px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
+                <video controls style="width: 100%; display: block;">
+                    <source src="images/demo video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="padding: 40px; text-align: center; border-top: 1px solid var(--border);">
+        <p>BROUGHT TO YOU BY THE TRELIO TEAM AFYA BORA UZIMA KWA WOTE</p>
+    </footer>
+
+    <div class="modal-overlay" id="signup-modal">
+        <div class="modal-card">
+            <button class="close-modal" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 2rem; cursor: pointer; color: var(--text-main);">&times;</button>
+            <h3>Ready to Start?</h3>
+            <p>Choose your entry path to the portal:</p>
+            <div class="modal-options" style="display: flex; gap: 20px; margin-top: 30px; justify-content: center;">
+                <a href="#" class="option" style="text-decoration: none; color: inherit; padding: 20px; border: 1px solid var(--border); border-radius: 15px; width: 150px;">
+                    <div class="opt-icon" style="font-size: 2rem;">👤</div>
+                    <h4>I am a User</h4>
+                </a>
+                <a href="#" class="option" style="text-decoration: none; color: inherit; padding: 20px; border: 1px solid var(--border); border-radius: 15px; width: 150px;">
+                    <div class="opt-icon" style="font-size: 2rem;">🩺</div>
+                    <h4>I am a Therapist</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
