@@ -92,7 +92,15 @@ h2 { font-size: 2.2rem; font-weight: 800; }
     transition: 0.3s;
 }
 
-.hero { padding: 100px 8%; background-color: var(--bg-alt); text-align: center; }
+.hero { padding: 100px 8%; background-color: var(--bg-alt); }
+
+.hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+.hero-content { text-align: left; }
+
+.hero-phone { display: flex; justify-content: center; align-items: center; }
+
+.hero-phone img { max-width: 100%; height: auto; }
 
 .section { padding: 100px 8%; position: relative; }
 
